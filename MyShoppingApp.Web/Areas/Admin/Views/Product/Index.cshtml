@@ -1,0 +1,35 @@
+﻿@model MyShoppingApp.Models.ViewModels.ProductVM;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p >
+    <a class="btn btn-primary" asp-action="CreateUpdate" asp-controller="Product"> Create new Product</a>
+</p>
+<table class="table table-bordered table-striped" id="myTable" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Products Name
+            </th>
+            <th>
+                Product Description
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+</table>
+@section scripts {
+    <script src="~/js/Product.js"></script>
+}
